@@ -20,7 +20,7 @@
         <apache.commons.lang.version>3.3.2</apache.commons.lang.version>
         <datastax.cassandra.version>3.0.0</datastax.cassandra.version>
         <spring.version>4.2.5.RELEASE</spring.version>
-        <spring.cassandra.version>1.4.0.M1</spring.cassandra.version>
+        <spring.cassandra.version>1.3.4.RELEASE</spring.cassandra.version>
         <junit.version>4.11</junit.version>
 
     </properties>
@@ -68,16 +68,5 @@
         </dependency>
 
     </dependencies>
-
-    <repositories>
-        <repository>
-            <id>spring-milestones</id>
-            <name>Spring Milestones</name>
-            <url>https://repo.spring.io/libs-milestone</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
 
 </project>
