@@ -19,6 +19,9 @@
         <!-- We need apache commons -->
         <apache.commons.lang.version>3.3.2</apache.commons.lang.version>
         <datastax.cassandra.version>3.0.0</datastax.cassandra.version>
+        <spring.version>4.2.5.RELEASE</spring.version>
+        <spring.cassandra.version>1.4.0.M1</spring.cassandra.version>
+        <junit.version>4.11</junit.version>
 
     </properties>
 
@@ -38,7 +41,43 @@
             <version>${datastax.cassandra.version}</version>
         </dependency>
 
+        <!-- Spring framework dependency -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-cassandra</artifactId>
+            <version>${spring.cassandra.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit-dep</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/libs-milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
 </project>
